@@ -1,18 +1,18 @@
 <p align="center">
-  <img src="docs/banner.svg" alt="REST Error Format banner" width="100%" />
+  <img src="docs/banner.svg" alt="rest-error-format banner" width="100%" />
 </p>
 
 <h1 align="center">rest-error-format</h1>
 
 <p align="center">
-  <strong>EN</strong> Standardized JSON error envelope for REST APIs<br/>
-  <strong>PT</strong> Envelope JSON padronizado para erros REST
+  <strong>EN</strong> Standard JSON error envelope for HTTP APIs.<br/>
+  <strong>PT</strong> Envelope JSON padrão de erros para APIs HTTP.
 </p>
 
 <p align="center">
   <a href="https://github.com/manansbdb/rest-error-format/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-22c55e?style=for-the-badge" alt="MIT" /></a>
   <img src="https://img.shields.io/badge/lang-EN%20%7C%20PT-3b82f6?style=for-the-badge" alt="EN PT" />
-  <img src="https://img.shields.io/badge/topic-REST-ef4444?style=for-the-badge" alt="REST" />
+  <img src="https://img.shields.io/badge/type-docs-6366f1?style=for-the-badge" alt="docs" />
   <a href="#support--apoio"><img src="https://img.shields.io/badge/donate-BTC-f59e0b?style=for-the-badge" alt="Donate BTC" /></a>
 </p>
 
@@ -22,76 +22,46 @@
 
 | English | Português |
 |---------|-----------|
-| A **standard JSON error envelope** plus examples so clients parse failures consistently. | Um **envelope JSON de erro** padrão e exemplos para clientes tratarem falhas de forma consistente. |
-| Adopt the shape in middleware and document it in your OpenAPI. | Adota o formato no middleware e documenta-o no OpenAPI. |
+| Standard JSON error envelope for HTTP APIs. | Envelope JSON padrão de erros para APIs HTTP. |
 
 ```mermaid
 flowchart LR
-  A["⚠️ Handler error"] --> B["📦 error-envelope.json"]
-  B --> C["🌐 HTTP 4xx/5xx"]
-  C --> D["📱 Client parses"]
-  style A fill:#f97316,stroke:#c2410c,color:#fff
-  style B fill:#ef4444,stroke:#b91c1c,color:#fff
-  style C fill:#6366f1,stroke:#4338ca,color:#fff
-  style D fill:#14b8a6,stroke:#0f766e,color:#fff
+  A["📖 Read"] --> B["🛠️ Apply"]
+  B --> C["📤 Ship"]
+  style A fill:#6366f1,stroke:#4338ca,color:#fff
+  style B fill:#14b8a6,stroke:#0f766e,color:#fff
+  style C fill:#22c55e,stroke:#15803d,color:#fff
 ```
 
 ---
 
 ## Install / Instalação
 
-### 1) Clone / Clona
+### 1) Clone
 
 ```bash
 git clone https://github.com/manansbdb/rest-error-format.git
 cd rest-error-format
 ```
 
-### 2) Apply / Aplica
+### Use / Usar
 
 ```bash
-mkdir -p docs/api
-cp error-envelope.json docs/api/
-cp examples.md docs/api/error-examples.md
-# mirror the JSON shape in your error middleware
+# open the files in this repo and copy what you need into your project
+ls
 ```
 
 ### Requirements / Requisitos
 
 - `git`
-- Any HTTP API stack
+- No paid services required / Sem serviços pagos
 
 ---
 
-## Quick start / Início rápido
+## Files / Ficheiros
 
-```bash
-git clone https://github.com/manansbdb/rest-error-format.git
-# open error-envelope.json and mirror fields in your API errors
-```
-
----
-
-## Contents / Conteúdos
-
-| Path | Purpose / Função |
-|------|------------------|
-| `error-envelope.json` | Canonical error shape |
-| `examples.md` | Sample payloads |
-| `SUPPORT.md` | Donations / Doações |
-
----
-
-## Project layout / Estrutura
-
-```text
-rest-error-format/
-├── docs/banner.svg
-├── error-envelope.json
-├── examples.md
-├── SUPPORT.md
-└── README.md
-```
+- `error-envelope.json`
+- `examples.md`
 
 ---
 
@@ -103,7 +73,7 @@ Bitcoin donations welcome / Doações em Bitcoin bem-vindas:
 bc1q0qfnlnxyum9u45stzxe0a7jnhtj4j0usfkqdjw
 ```
 
-See [SUPPORT.md](./SUPPORT.md).
+**Network / Rede:** BTC (Bech32).
 
 ---
 
