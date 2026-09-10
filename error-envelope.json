@@ -1,0 +1,17 @@
+{
+  "error": {
+    "code": "VALIDATION_FAILED",
+    "message": "One or more fields are invalid",
+    "message_pt": "Um ou mais campos são inválidos",
+    "status": 400,
+    "request_id": "req_01HXYZEXAMPLE",
+    "details": [
+      {
+        "field": "email",
+        "reason": "invalid_format",
+        "message": "Must be a valid email address",
+        "message_pt": "Deve ser um endereço de email válido"
+      }
+    ]
+  }
+}
